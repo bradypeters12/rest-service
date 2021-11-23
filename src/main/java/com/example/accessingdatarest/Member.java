@@ -22,6 +22,18 @@ public class Member {
     @JoinColumn(name = "past_tournament_id")
     private PastTournaments pastTournaments;
 
+
+    public Member(Person person, LocalDate membershipStart, LocalDate membershipDuration, String membershipType) {
+        this.id = id;
+        this.person = person;
+        this.membershipStart = membershipStart;
+        this.membershipDuration = membershipDuration;
+        this.membershipType = membershipType;
+        this.tournament = null;
+        this.pastTournaments = null;
+    }
+
+
     //Getters for membership class
     public Person getPerson() { return person; }
     public LocalDate getMembershipStart() { return membershipStart; }
