@@ -7,6 +7,8 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
+
+//Final Standings Repository
 @RepositoryRestResource(collectionResourceRel = "finalStandings", path = "finalStandings")
 public interface FinalStandingsRepository extends PagingAndSortingRepository<FinalStandings, Long> {
 
